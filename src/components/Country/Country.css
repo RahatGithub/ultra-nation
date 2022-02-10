@@ -1,0 +1,28 @@
+.country{
+    border-radius: 8px;
+    background-color: lightskyblue;
+    margin: 25px 0;
+    padding: 20px;
+    display: flex;
+    width: 800px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.info{
+    margin-left: 30px;
+}
+
+.flag img{
+    height: 150px;
+    width: 200px;
+}
+
+button{
+    color: white;
+    background-color: rgb(46, 46, 192);
+    border: none;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
