@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 function App() {
 
   const [countries, setCountries] = useState([]);
+  const [collection, setCollection] = useState([]);
 
   useEffect( () => {
     fetch('https://restcountries.com/v3.1/all')
@@ -16,13 +17,14 @@ function App() {
   }, [])
 
   const handleAddCountry = (country) => {
-    console.log(country, 'added');
+    const newCollection = [...collection, country];
+    setCollection(newCollection);
   }
 
   return (
     <div className="App">
       <header className="App-header">
-        <Header></Header>
+        <Header collection={collection}></Header>
         {
           countries.map(country => <Country country={country} handleAddCountry={handleAddCountry}></Country>)
         }

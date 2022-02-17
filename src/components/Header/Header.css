@@ -1,12 +1,14 @@
-.navbar{
-    /* background-color: rgb(166, 207, 138); */
+.header{
     background-color: rgb(32, 25, 25);
     line-height: 40px;
+    color: white;
+    text-align: center;
+    min-width: 845px;
 }
 
 nav a{
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     margin-left: 20px;
     font-size: 20px;
     padding: 5px;
@@ -15,4 +17,10 @@ nav a{
 nav a:hover{
     /* background-color: rgb(75, 99, 76); */
     color: lightskyblue;
+}
+
+.show-info{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(53, 49, 49);
 }
