@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './Header.css';
 
 const Header = (props) => {
+
     const {collection} = props;
+
     let total = 0;
     for(let i=0; i<collection.length; i++){
         const country = collection[i];
@@ -18,7 +20,7 @@ const Header = (props) => {
                 <a href="/contact">Contact</a>
             </nav>
             <div className="show-info">
-                <p>Countries selected: {collection.length}</p>
+                <p>Countries selected: {collection ? collection.length : 0}</p>
                 <p>Total population: {total}</p>
             </div>
         </div>
